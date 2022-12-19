@@ -23,7 +23,7 @@ class LoginPage extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 Image.asset(
-                  'images/digipostlogo/logo5.png',
+                  'images/digipostlogo/logo6.png',
                   width: 150,
                   height: 150,
                 ),
@@ -122,23 +122,23 @@ class LoginPage extends StatelessWidget {
 
                         textStyle: TextStyle(
                             fontSize: 15, fontWeight: FontWeight.bold))),
-                // SizedBox(
-                //   height: 40,
-                // ),
-                // Row(
-                //   mainAxisAlignment: MainAxisAlignment.center,
-                //   children: [
-                //     Text('Don\'t have an account?'),
-                //     //SizedBox(width: 5,),
-                //     TextButton(
-                //         onPressed: () {
-                //         },
-                //         child: Text(
-                //           'Signup',
-                //           style: TextStyle(fontSize: 17),
-                //         ))
-                //   ],
-                // ),
+                SizedBox(
+                  height: 40,
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text('Don\'t have an account?'),
+                    //SizedBox(width: 5,),
+                    TextButton(
+                        onPressed: () {
+                        },
+                        child: Text(
+                          'Signup',
+                          style: TextStyle(fontSize: 17),
+                        ))
+                  ],
+                ),
                 // SizedBox(
                 //   height: 20,
                 // ),

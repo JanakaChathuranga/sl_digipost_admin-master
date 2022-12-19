@@ -106,29 +106,30 @@ class _MyHomePageState extends State<MyHomePage> {
                   textStyle: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                 ),
               ),
-              // SizedBox(
-              //   height: 40,
-              // ),
-              // ElevatedButton(
-              //   onPressed: () {
-              //     //Navigator.push(context, MaterialPageRoute(builder: (context)=>SignUp()));
-              //     Navigator.pushNamed(context, '/signup');
-              //   },
-              //   child: Text('SignUp'),
-              //   style: ElevatedButton.styleFrom(
-              //     shape: RoundedRectangleBorder(
-              //         borderRadius: BorderRadius.circular(20)),
-              //     //side: BorderSide(width: 10,color: Colors.blue),
-              //     minimumSize: Size(250, 50),
-              //     padding: EdgeInsets.all(20),
-              //     primary: Color.fromARGB(255, 53, 94, 229), //background
-              //     onPrimary: Colors.white,
-              //     elevation: 20,
-              //     //shadowColor: Colors.red,
-              //
-              //     textStyle: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-              //   ),
-              // ),
+
+              SizedBox(
+                height: 40,
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  //Navigator.push(context, MaterialPageRoute(builder: (context)=>SignUp()));
+                  Navigator.pushNamed(context, '/signup');
+                },
+                child: Text('SignUp'),
+                style: ElevatedButton.styleFrom(
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(20)),
+                  //side: BorderSide(width: 10,color: Colors.blue),
+                  minimumSize: Size(250, 50),
+                  padding: EdgeInsets.all(20),
+                  primary: Color.fromARGB(255, 53, 94, 229), //background
+                  onPrimary: Colors.white,
+                  elevation: 20,
+                  //shadowColor: Colors.red,
+
+                  textStyle: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                ),
+              ),
             ],
           ),
         ),
