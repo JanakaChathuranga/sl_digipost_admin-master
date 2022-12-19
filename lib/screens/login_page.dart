@@ -23,7 +23,7 @@ class LoginPage extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 Image.asset(
-                  'images/digipostlogo/logo6.png',
+                  'images/digipostlogo/logo5.png',
                   width: 150,
                   height: 150,
                 ),
