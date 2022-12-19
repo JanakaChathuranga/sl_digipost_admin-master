@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'screens/home_page.dart';
 import 'screens/login_page.dart';
 import 'screens/main_page.dart';
+import 'screens/signup_page.dart';
 import 'screens/telcohome_page.dart';
 import 'screens/bankshome_page.dart';
 import 'screens/insurancehome_page.dart';
@@ -25,6 +26,7 @@ class MyApp extends StatelessWidget {
       home: const MyHomePage(title: 'Home Page'),
       routes: <String, WidgetBuilder>{
         '/login': (context) => LoginPage(""),
+        '/signup': (context) => SignUp(),
         '/main': (context) => MainPage(),
         '/telcohome': (context) => TelcoHomePage(),
         '/bankshome': (context) => BanksHomePage(),

@@ -132,6 +132,7 @@ class LoginPage extends StatelessWidget {
                     //SizedBox(width: 5,),
                     TextButton(
                         onPressed: () {
+                          Navigator.pushNamed(context, '/signup');
                         },
                         child: Text(
                           'Signup',
