@@ -1,5 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:colorful_safe_area/colorful_safe_area.dart';
+import 'package:page_transition/page_transition.dart';
+
+import 'telcohome_page.dart';
+import 'bankshome_page.dart';
+import 'financehome_page.dart';
+import 'insurancehome_page.dart';
 
 class MainPage extends StatefulWidget {
   const MainPage({Key? key}) : super(key: key);
@@ -126,7 +132,8 @@ class _MainPageState extends State<MainPage> {
                             children: [
                               InkWell(
                               onTap: () {
-                        Navigator.pushNamed(context,'/telcohome');
+                                // Navigator.pushNamed(context,'/telcohome');
+                                Navigator.push(context, PageTransition(type: PageTransitionType.rightToLeftWithFade, duration: Duration (seconds: 1), child: TelcoHomePage()));
                         },
                           child: Image.asset(
                             'images/homepics/telco.png',
@@ -137,7 +144,8 @@ class _MainPageState extends State<MainPage> {
                               ),
                         InkWell(
                           onTap: () {
-                            Navigator.pushNamed(context,'/telcohome');
+                            // Navigator.pushNamed(context,'/telcohome');
+                            Navigator.push(context, PageTransition(type: PageTransitionType.rightToLeftWithFade, duration: Duration (seconds: 1), child: TelcoHomePage()));
                           },
                          child: Text(
                             'Telco',
@@ -183,7 +191,8 @@ class _MainPageState extends State<MainPage> {
                             children: [
                               InkWell(
                               onTap: () {
-                        Navigator.pushNamed(context,'/bankshome');
+                              // Navigator.pushNamed(context,'/bankshome');
+                                Navigator.push(context, PageTransition(type: PageTransitionType.rightToLeftWithFade, duration: Duration (seconds: 1), child: BanksHomePage()));
                         },
                           child: Image.asset(
                             'images/homepics/bank.jpg',
@@ -194,7 +203,8 @@ class _MainPageState extends State<MainPage> {
                               ),
                         InkWell(
                           onTap: () {
-                            Navigator.pushNamed(context,'/bankshome');
+                            // Navigator.pushNamed(context,'/bankshome');
+                            Navigator.push(context, PageTransition(type: PageTransitionType.rightToLeftWithFade, duration: Duration (seconds: 1), child: BanksHomePage()));
                           },
                           child: Text(
                             'Banks',
@@ -354,7 +364,8 @@ class _MainPageState extends State<MainPage> {
                             children: [
                              InkWell(
                               onTap: () {
-                        Navigator.pushNamed(context,'/financehome');
+                        // Navigator.pushNamed(context,'/financehome');
+                                Navigator.push(context, PageTransition(type: PageTransitionType.rightToLeftWithFade, duration: Duration (seconds: 1), child: FinanceHomePage()));
                         },
                           child: Image.asset(
                             'images/homepics/finance.png',
@@ -365,7 +376,8 @@ class _MainPageState extends State<MainPage> {
                              ),
                         InkWell(
                           onTap: () {
-                            Navigator.pushNamed(context,'/financehome');
+                            // Navigator.pushNamed(context,'/financehome');
+                            Navigator.push(context, PageTransition(type: PageTransitionType.rightToLeftWithFade, duration: Duration (seconds: 1), child: FinanceHomePage()));
                           },
                           child: Text(
                             'Finance',
@@ -411,7 +423,8 @@ class _MainPageState extends State<MainPage> {
                               children: [
                                 InkWell(
                                 onTap: () {
-                          Navigator.pushNamed(context,'/insurancehome');
+                          // Navigator.pushNamed(context,'/insurancehome');
+                                  Navigator.push(context, PageTransition(type: PageTransitionType.rightToLeftWithFade, duration: Duration (seconds: 1), child: InsuranceHomePage()));
                           },
                                 child: Image.asset(
                                   'images/homepics/insurance.jpg',
@@ -422,7 +435,8 @@ class _MainPageState extends State<MainPage> {
                                 ),
                           InkWell(
                             onTap: () {
-                              Navigator.pushNamed(context,'/insurancehome');
+                              // Navigator.pushNamed(context,'/insurancehome');
+                              Navigator.push(context, PageTransition(type: PageTransitionType.rightToLeftWithFade, duration: Duration (seconds: 1), child: InsuranceHomePage()));
                             },
                                 child: Text(
                                   'Insurance',

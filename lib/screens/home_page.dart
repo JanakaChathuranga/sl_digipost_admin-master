@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:colorful_safe_area/colorful_safe_area.dart';
+import 'package:page_transition/page_transition.dart';
 
 import 'login_page.dart';
+import 'signup_page.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
@@ -89,7 +91,8 @@ class _MyHomePageState extends State<MyHomePage> {
               ElevatedButton(
                 onPressed: () {
                   //Navigator.push(context, MaterialPageRoute(builder: (context)=>SignUp()));
-                  Navigator.pushNamed(context, '/login');
+                  // Navigator.pushNamed(context, '/login');
+                  Navigator.push(context, PageTransition(type: PageTransitionType.scale, alignment: Alignment.bottomCenter, duration: Duration (seconds: 1), child: LoginPage("")));
                 },
                 child: Text('Login'),
                 style: ElevatedButton.styleFrom(
@@ -113,7 +116,8 @@ class _MyHomePageState extends State<MyHomePage> {
               ElevatedButton(
                 onPressed: () {
                   //Navigator.push(context, MaterialPageRoute(builder: (context)=>SignUp()));
-                  Navigator.pushNamed(context, '/signup');
+                  // Navigator.pushNamed(context, '/signup');
+                  Navigator.push(context, PageTransition(type: PageTransitionType.scale, alignment: Alignment.bottomCenter, duration: Duration (seconds: 1), child: SignUp()));
                 },
                 child: Text('SignUp'),
                 style: ElevatedButton.styleFrom(

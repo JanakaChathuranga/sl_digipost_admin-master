@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:passwordfield/passwordfield.dart';
 import 'package:colorful_safe_area/colorful_safe_area.dart';
 
+import 'package:page_transition/page_transition.dart';
+
+import 'main_page.dart';
 import 'login_page.dart';
 
 class SignUp extends StatefulWidget {
@@ -182,7 +185,9 @@ class _SignUpState extends State<SignUp> {
             height: 50,
           ),
           ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+
+              },
               child: Text('Sign up'),
               style: ElevatedButton.styleFrom(
                   shape: RoundedRectangleBorder(
@@ -207,8 +212,9 @@ class _SignUpState extends State<SignUp> {
               //SizedBox(width: 5,),
               TextButton(
                   onPressed: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => LoginPage("")));
+                    // Navigator.push(context,
+                    //     MaterialPageRoute(builder: (context) => LoginPage("")));
+                    Navigator.push(context, PageTransition(type: PageTransitionType.scale, alignment: Alignment.bottomCenter, duration: Duration (seconds: 1), child: LoginPage("")));
                   },
                   child: Text(
                     'Login',

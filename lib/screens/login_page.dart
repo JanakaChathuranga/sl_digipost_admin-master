@@ -2,6 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:sl_digipost_admin/screens/main_page.dart';
 import 'package:passwordfield/passwordfield.dart';
 import 'package:colorful_safe_area/colorful_safe_area.dart';
+import 'package:page_transition/page_transition.dart';
+
+import 'main_page.dart';
+import 'signup_page.dart';
 
 class LoginPage extends StatelessWidget {
   String text;
@@ -106,7 +110,8 @@ class LoginPage extends StatelessWidget {
                 ),
                 ElevatedButton(
                     onPressed: () {
-                      Navigator.pushNamed(context, '/main');
+                      // Navigator.pushNamed(context, '/main');
+                      Navigator.push(context, PageTransition(type: PageTransitionType.rotate, alignment: Alignment.bottomCenter, duration: Duration (seconds: 1), child: MainPage()));
                     },
                     child: Text('Login'),
                     style: ElevatedButton.styleFrom(
@@ -132,7 +137,8 @@ class LoginPage extends StatelessWidget {
                     //SizedBox(width: 5,),
                     TextButton(
                         onPressed: () {
-                          Navigator.pushNamed(context, '/signup');
+                          // Navigator.pushNamed(context, '/signup');
+                          Navigator.push(context, PageTransition(type: PageTransitionType.scale, alignment: Alignment.bottomCenter, duration: Duration (seconds: 1), child: SignUp()));
                         },
                         child: Text(
                           'Signup',
