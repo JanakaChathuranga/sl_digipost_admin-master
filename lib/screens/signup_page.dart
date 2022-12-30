@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:passwordfield/passwordfield.dart';
 import 'package:colorful_safe_area/colorful_safe_area.dart';
+import 'package:sl_digipost_admin/screens/loginWidget.dart';
 
-import 'login_page.dart';
 
 class SignUp extends StatefulWidget {
   const SignUp({Key? key}) : super(key: key);
@@ -208,7 +208,7 @@ class _SignUpState extends State<SignUp> {
               TextButton(
                   onPressed: () {
                     Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => LoginPage("")));
+                        MaterialPageRoute(builder: (context) => loginWidget()));
                   },
                   child: Text(
                     'Login',
