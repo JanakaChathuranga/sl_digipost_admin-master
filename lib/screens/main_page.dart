@@ -44,7 +44,7 @@ class _MainPageState extends State<MainPage> {
                 width: double.infinity,
                 height: 45,
                 decoration: BoxDecoration(
-                  color: Colors.black87,
+                  color: Color.fromARGB(255,3,37,126),
                 ),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
@@ -58,7 +58,7 @@ class _MainPageState extends State<MainPage> {
                       child: IconButton(
                         icon: Icon(
                           Icons.home,
-                          color: Color(0xFFFFFFFF),
+                          color: Colors.white,
                           size: 30,
                         ),
                         onPressed: () {
@@ -99,14 +99,16 @@ class _MainPageState extends State<MainPage> {
                 padding: EdgeInsetsDirectional.fromSTEB(12, 12, 12, 12),
 
                 child: Container(
+                  alignment: Alignment.center,
                   child: Text(
                     'Admin Pannel',
-                    textAlign: TextAlign.center,
+                    textAlign: TextAlign.left,
                     style: TextStyle(
                       fontFamily: 'Poppins',
                         fontSize: 28,
                       color: Colors.black,
-                      fontStyle: FontStyle.italic,
+                 fontWeight: FontWeight.bold
+                 //     fontStyle: FontStyle.,
                     ),
                   ),
                 ),
@@ -125,347 +127,136 @@ class _MainPageState extends State<MainPage> {
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
                       Align(
-                        alignment: AlignmentDirectional(0, 0.05),
-                        child: Material(
-                          color: Colors.transparent,
-                          elevation: 10,
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(20),
+                        child: ElevatedButton.icon(
+                          icon: ImageIcon(
+                            AssetImage('images/homepics/telco.png'),
+                            color: Colors.black,
+                            size: 50,
                           ),
-                          child: Container(
-                            width: 250,
-                            height: 60,
-                            decoration: BoxDecoration(
-                              color: Color(0x484848),
-                              boxShadow: [
-                                BoxShadow(
-                                  blurRadius: 0,
-                                  color: Color(0x33000000),
-                                  offset: Offset(2, 2),
-                                  spreadRadius: 4,
-                                )
-                              ],
-                              borderRadius: BorderRadius.circular(20),
-                            ),
-                            child: Row (
-                              mainAxisSize: MainAxisSize.max,
-                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                              children: [
-                                InkWell(
-                                onTap: () {
-                          Navigator.pushNamed(context,'/telcohome');
+                          label: Text('Telco'),
+                          onPressed: () {
+                            Navigator.pushNamed(context,'');
                           },
-                            child: Image.asset(
-                              'images/homepics/telco.png',
-                              width: 100,
-                              height: 100,
-                              fit: BoxFit.contain,
-                            ),
-                                ),
-                          InkWell(
-                            onTap: () {
-                              Navigator.pushNamed(context,'/telcohome');
-                            },
-                           child: Text(
-                              'Telco',
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                fontWeight: FontWeight.w400,
-                                fontFamily: 'Poppins',
-                                fontSize: 16,
-                              ),
+                          style: ElevatedButton.styleFrom(
+                            minimumSize: Size(250, 60),
+                            primary: Color.fromARGB(255,137, 196, 244),//background
+                            shape: new RoundedRectangleBorder(
+                              borderRadius: new BorderRadius.circular(20.0),
                             ),
                           ),
-                        ],
-                      ),
-                      ),
-                      ),
+                        ),
                       ),
                       Align(
-                        alignment: AlignmentDirectional(0, 0.05),
-                        child: Material(
-                          color: Colors.transparent,
-                          elevation: 10,
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(20),
+                        child: ElevatedButton.icon(
+
+                          icon: ImageIcon(
+                            AssetImage('images/homepics/bank.jpg'),
+                            color: Colors.black,
+                            size: 50,
                           ),
-                          child: Container(
-                            width: 250,
-                            height: 60,
-                            decoration: BoxDecoration(
-                              color: Color(0x484848),
-                              boxShadow: [
-                                BoxShadow(
-                                  blurRadius: 0,
-                                  color: Color(0x33000000),
-                                  offset: Offset(2, 2),
-                                  spreadRadius: 4,
-                                )
-                              ],
-                              borderRadius: BorderRadius.circular(20),
-                            ),
-                            child: Row (
-                              mainAxisSize: MainAxisSize.max,
-                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                              children: [
-                                InkWell(
-                                onTap: () {
-                          Navigator.pushNamed(context,'/bankshome');
+
+                          label: Text('Banks'),
+                          onPressed: () {
+                            Navigator.pushNamed(context,'');
                           },
-                            child: Image.asset(
-                              'images/homepics/bank.jpg',
-                              width: 100,
-                              height: 100,
-                              fit: BoxFit.contain,
-                            ),
-                                ),
-                          InkWell(
-                            onTap: () {
-                              Navigator.pushNamed(context,'/bankshome');
-                            },
-                            child: Text(
-                              'Banks',
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                fontWeight: FontWeight.w400,
-                                fontFamily: 'Poppins',
-                                fontSize: 16,
-                              ),
+                          style: ElevatedButton.styleFrom(
+                            minimumSize: Size(250, 60),
+                            primary: Color.fromARGB(255,137, 196, 244),
+                            shape: new RoundedRectangleBorder(
+                              borderRadius: new BorderRadius.circular(20.0),
                             ),
                           ),
-                          ],
                         ),
-                      ),
-            ),
                       ),
                       Align(
-                        alignment: AlignmentDirectional(0, 0.05),
-                        child: Material(
-                          color: Colors.transparent,
-                          elevation: 10,
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(20),
+                        child: ElevatedButton.icon(
+
+                          icon: ImageIcon(
+                            AssetImage('images/homepics/tower.png'),
+                             color: Colors.black,
+
+                            size: 50,
                           ),
-                          child: Container(
-                            width: 250,
-                            height: 60,
-                            decoration: BoxDecoration(
-                              color: Color(0x484848),
-                              boxShadow: [
-                                BoxShadow(
-                                  blurRadius: 0,
-                                  color: Color(0x33000000),
-                                  offset: Offset(2, 2),
-                                  spreadRadius: 4,
-                                )
-                              ],
-                              borderRadius: BorderRadius.circular(20),
-                            ),
-                            child: Row (
-                              mainAxisSize: MainAxisSize.max,
-                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                              children: [
-                                InkWell(
-                                onTap: () {
-                          Navigator.pushNamed(context,'');
+
+                          label: Text('Electricity Board'),
+                          onPressed: () {
+                            Navigator.pushNamed(context,'');
                           },
-                            child: Image.asset(
-                              'images/homepics/electricity.png',
-                              width: 100,
-                              height: 100,
-                              fit: BoxFit.contain,
-                            ),
-                                ),
-                          InkWell(
-                            onTap: () {
-                              Navigator.pushNamed(context,'');
-                            },
-                            child: Text(
-                              'Electricity \n Board',
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                fontWeight: FontWeight.w400,
-                                fontFamily: 'Poppins',
-                                fontSize: 16,
-                              ),
+                          style: ElevatedButton.styleFrom(
+                            minimumSize: Size(250, 60),
+                            primary: Color.fromARGB(255,137, 196, 244),
+                            shape: new RoundedRectangleBorder(
+                              borderRadius: new BorderRadius.circular(20.0),
                             ),
                           ),
-                          ],
                         ),
-                      ),
-                      ),
                       ),
                       Align(
-                        alignment: AlignmentDirectional(0, 0.05),
-                        child: Material(
-                          color: Colors.transparent,
-                          elevation: 10,
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(20),
+                        child: ElevatedButton.icon(
+
+                          icon: ImageIcon(
+                            AssetImage('images/homepics/water.png'),
+                            color: Colors.black,
+                            size: 50,
                           ),
-                          child: Container(
-                            width: 250,
-                            height: 60,
-                            decoration: BoxDecoration(
-                              color: Color(0x484848),
-                              boxShadow: [
-                                BoxShadow(
-                                  blurRadius: 0,
-                                  color: Color(0x33000000),
-                                  offset: Offset(2, 2),
-                                  spreadRadius: 4,
-                                )
-                              ],
-                              borderRadius: BorderRadius.circular(20),
-                            ),
-                            child: Row (
-                              mainAxisSize: MainAxisSize.max,
-                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                              children: [
-                                InkWell(
-                                onTap: () {
-                          Navigator.pushNamed(context,'');
+
+                          label: Text('Water Board'),
+                          onPressed: () {
+                            Navigator.pushNamed(context,'');
                           },
-                            child: Image.asset(
-                              'images/homepics/water.png',
-                              width: 100,
-                              height: 100,
-                              fit: BoxFit.contain,
-                            ),
-                                ),
-                          InkWell(
-                            onTap: () {
-                              Navigator.pushNamed(context,'');
-                            },
-                            child: Text(
-                              'Water \n Board',
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                fontWeight: FontWeight.w400,
-                                fontFamily: 'Poppins',
-                                fontSize: 16,
-                              ),
+                          style: ElevatedButton.styleFrom(
+                            minimumSize: Size(250, 60),
+                            primary: Color.fromARGB(255,137, 196, 244),
+                            shape: new RoundedRectangleBorder(
+                              borderRadius: new BorderRadius.circular(20.0),
                             ),
                           ),
-                          ],
                         ),
-                      ),
-                      ),
                       ),
                       Align(
-                        alignment: AlignmentDirectional(0, 0.05),
-                        child: Material(
-                          color: Colors.transparent,
-                          elevation: 10,
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(20),
+                        child: ElevatedButton.icon(
+
+                          icon: ImageIcon(
+                            AssetImage('images/homepics/finance.png'),
+                            color: Colors.black,
+                            size: 50,
                           ),
-                          child: Container(
-                            width: 250,
-                            height: 60,
-                            decoration: BoxDecoration(
-                              color: Color(0x484848),
-                              boxShadow: [
-                                BoxShadow(
-                                  blurRadius: 0,
-                                  color: Color(0x33000000),
-                                  offset: Offset(3, 2),
-                                  spreadRadius: 4,
-                                )
-                              ],
-                              borderRadius: BorderRadius.circular(20),
-                            ),
-                            child: Row (
-                              mainAxisSize: MainAxisSize.max,
-                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                              children: [
-                               InkWell(
-                                onTap: () {
-                          Navigator.pushNamed(context,'/financehome');
+
+                          label: Text('Finance'),
+                          onPressed: () {
+                            Navigator.pushNamed(context,'');
                           },
-                            child: Image.asset(
-                              'images/homepics/finance.png',
-                              width: 100,
-                              height: 100,
-                              fit: BoxFit.contain,
-                            ),
-                               ),
-                          InkWell(
-                            onTap: () {
-                              Navigator.pushNamed(context,'/financehome');
-                            },
-                            child: Text(
-                              'Finance',
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                fontWeight: FontWeight.w400,
-                                fontFamily: 'Poppins',
-                                fontSize: 16,
-                              ),
+                          style: ElevatedButton.styleFrom(
+                            minimumSize: Size(250, 60),
+                            primary: Color.fromARGB(255,137, 196, 244),
+                            shape: new RoundedRectangleBorder(
+                              borderRadius: new BorderRadius.circular(20.0),
                             ),
                           ),
-                          ],
                         ),
                       ),
-                      ),
-                      ),
-                        Align(
-                          alignment: AlignmentDirectional(0, 0.05),
-                          child: Material(
-                            color: Colors.transparent,
-                            elevation: 10,
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(20),
-                            ),
-                            child: Container(
-                              width: 250,
-                              height: 60,
-                              decoration: BoxDecoration(
-                                color: Color(0x484848),
-                                boxShadow: [
-                                  BoxShadow(
-                                    blurRadius: 0,
-                                    color: Color(0x33000000),
-                                    offset: Offset(3, 2),
-                                    spreadRadius: 4,
-                                  )
-                                ],
-                                borderRadius: BorderRadius.circular(20),
-                              ),
-                              child: Row (
-                                mainAxisSize: MainAxisSize.max,
-                                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                                children: [
-                                  InkWell(
-                                  onTap: () {
-                            Navigator.pushNamed(context,'/insurancehome');
-                            },
-                                  child: Image.asset(
-                                    'images/homepics/insurance.jpg',
-                                    width: 100,
-                                    height: 100,
-                                    fit: BoxFit.contain,
-                                  ),
-                                  ),
-                            InkWell(
-                              onTap: () {
-                                Navigator.pushNamed(context,'/insurancehome');
-                              },
-                                  child: Text(
-                                    'Insurance',
-                                    textAlign: TextAlign.center,
-                                    style: TextStyle(
-                                      fontWeight: FontWeight.w400,
-                                      fontFamily: 'Poppins',
-                                      fontSize: 16,
-                                    ),
-                                  ),
-                            ),
-                              ],
+                      Align(
+                        child: ElevatedButton.icon(
+
+                          icon: ImageIcon(
+                            AssetImage('images/homepics/insurance.jpg'),
+                            color: Colors.black,
+                            size: 50,
+                          ),
+
+                          label: Text('Insurance'),
+                          onPressed: () {
+                            Navigator.pushNamed(context,'');
+                          },
+                          style: ElevatedButton.styleFrom(
+                            minimumSize: Size(250, 60),
+                            primary: Color.fromARGB(255,137, 196, 244),
+                            shape: new RoundedRectangleBorder(
+                              borderRadius: new BorderRadius.circular(20.0),
                             ),
                           ),
-                      ),
                         ),
+                      ),
                   ],
               ),
             ),

@@ -108,6 +108,7 @@ flutter:
     - images/dialogpromotionspics/D1.jpg
     - images/dialogpromotionspics/D2.jpg
     - images/dialogpromotionspics/D3.jpg
+    - images/homepics/tower.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

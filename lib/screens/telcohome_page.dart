@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:colorful_safe_area/colorful_safe_area.dart';
-import 'package:page_transition/page_transition.dart';
+//import 'package:page_transition/page_transition.dart';
 
 import 'dialogupload_page.dart';
 
@@ -109,8 +109,8 @@ class _TelcoHomePageState extends State<TelcoHomePage> {
                               ),
                               child: InkWell(
                                 onTap: () {
-                                  // Navigator.pushNamed(context,'/dialogupload');
-                                  Navigator.push(context, PageTransition(type: PageTransitionType.rightToLeftWithFade, duration: Duration (seconds: 1), child: DialogUploadPage()));
+                                   Navigator.pushNamed(context,'/dialogupload');
+              //                    Navigator.push(context, PageTransition(type: PageTransitionType.rightToLeftWithFade, duration: Duration (seconds: 1), child: DialogUploadPage()));
                                 },
                                 child: Image.asset(
                                   'images/telcohomepics/dialog.png',
